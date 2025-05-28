@@ -153,7 +153,7 @@ Let's explore how refactoring a procedural Selenium test into a Page Object Mode
 
 <br>
 
-2. **Create a new 📄 `sign_in_test.py` test file and start with the following _procedural_ test script:**
+2. **Create a new 📄 `sign_in_page_test.py` test file and start with the following _procedural_ test script:**
 
 ```python
 from selenium import webdriver
@@ -171,7 +171,7 @@ driver.quit()
 
 3. **Refactor this code using the Page Object Model:**
 
-   - Create a file named <code class="filepath">sign_in.py</code> for your `SignInPage` class.
+   - Create a file named `sign_in_page.py` for your `SignInPage` class.
    - Move all selectors (locators) and related actions into methods inside the `SignInPage` class.
    - Update your test script to import and use `SignInPage` to perform login actions.
 
@@ -211,14 +211,14 @@ class SignInPage:
         self.click_signin()
 ```
 
-**Now refactor your `sign_in_test.py` test file, to use the new class:**
+**Now refactor your `sign_in_page_test.py` test file, to use the new class:**
 
 ```python
 from selenium import webdriver
 from sign_in_page import SignInPage
 
 driver = webdriver.Chrome()
-driver.get("https://demo-app.com/login")
+driver.get("file:///Users/username/path/to/example_file.html") # Replace with the full absolute path to your local HTML file
 
 sign_in_page = SignInPage(driver)
 sign_in_page.sign_in("beginner123", "password")

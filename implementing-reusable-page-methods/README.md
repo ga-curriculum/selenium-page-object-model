@@ -173,7 +173,8 @@ class CheckoutPage:
 
         # Step 7: After clicking, the user is taken to the receipt page
         # (This assumes there is a separate ReceiptPage class)
-        return ReceiptPage(self.driver)
+        # return ReceiptPage(self.driver)
+        return None  # Placeholder until ReceiptPage is implemented
 
     def complete_checkout(self, address, method):
         # Step 8: Combine all the above steps into one method to complete the whole checkout process
