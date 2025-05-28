@@ -9,23 +9,31 @@ setup = new Template.Microlesson {
   videoUrl = ""
 }
 
-concepts = new Template.Microlesson {
-  friendlyName = "Concepts"
-  dirName = "concepts"
+introductionToPageObjectModel = new Template.Microlesson {
+  friendlyName = "Introduction to Page Object Model"
+  dirName = "introduction-to-page-object-model"
   type = "Content"
   videoUrl = ""
 }
 
-microlesson01 = new Template.Microlesson {
-  friendlyName = "Microlesson 01"
-  dirName = "microlesson-01"
+refactoringTestsWithPageObjects = new Template.Microlesson {
+  friendlyName = "Refactoring Tests with Page Objects"
+  dirName = "refactoring-tests-with-page-objects"
   type = "Content"
   videoUrl = ""
 }
 
-microlesson02 = new Template.Microlesson {
-  friendlyName = "Microlesson 02"
-  dirName = "microlesson-02"
+implementingReusablePageMethods = new Template.Microlesson {
+  friendlyName = "Implementing Reusable Page Methods"
+  dirName = "implementing-reusable-page-methods"
   type = "Content"
   videoUrl = ""
 }
+
+evaluatingPomVsDirectScripting = new Template.Microlesson {
+  friendlyName = "Evaluating POM vs Direct Scripting"
+  dirName = "evaluating-pom-vs-direct-scripting"
+  type = "Content"
+  videoUrl = ""
+}
+
